@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Pato Amarillo</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        /* Estilos Generales */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f0f0f0; /* Color de fondo gris claro para la página */
+        }
+
+        .main-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        /* Sección del Header (Logo y Título) */
+        .header {
+            background-color: #ffff00; /* Amarillo */
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .header .logo {
+            max-width: 180px; /* Ajusta el tamaño de tu logo */
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        /* Barra de Acciones Rápidas */
+        .action-bar {
+            display: flex;
+            background-color: #ffc400; /* Naranjilla */
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .action-bar a {
+            flex: 1;
+            text-align: center;
+            padding: 15px 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
+        }
+
+        .action-bar a:hover {
+            background-color: #FFA500; /* Naranja */
+        }
+        
+        .action-bar a i {
+            display: block;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        
+        /* Contenido Principal (Descripción y Contacto) */
+        .content {
+            padding: 30px 25px;
+        }
+
+        .content .description {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 25px;
+        }
+        
+        /* Lista de Información de Contacto */
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 25px;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .contact-list .icon {
+            font-size: 1.5em;
+            color: #888;
+            width: 40px;
+            text-align: center;
+            margin-right: 15px;
+            padding-top: 5px;
+        }
+        
+        .contact-list .info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-list .info span {
+            font-size: 1.1em;
+            color: #333;
+        }
+        
+        .contact-list .info small {
+            font-size: 0.9em;
+            color: #777;
+        }
+        
+        /* Estilo para el enlace "MOSTRAR EN MAPA" */
+        .contact-list .info a.map-link {
+            margin-top: 8px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        /* MODIFICADO: Estilo para los nuevos hipervínculos de contacto para que no sean azules */
+        .contact-list .info a.contact-hyperlink {
+            text-decoration: none;
+            color: inherit; /* Hereda el color del texto normal */
+        }
+        
+        /* Sección de Redes Sociales */
+        .social-section {
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+
+        .social-section h2 {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            font-size: 1.8em;
+            color: white;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+        
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        .facebook { background-color: #3b5998; }
+        .instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <header class="header">
+            <img src="Logo Pato Amarillo.jpg" alt="Logo de la Organización" class="logo">
+            <h1>Asociación Pato Amarillo</h1>
+        </header>
+
+        <nav class="action-bar">
+            <a href="tel:+34667398471">
+                <i class="fas fa-phone-alt"></i>
+                LLAMAR
+            </a>
+            <a href="mailto:info@asociacionpatoamarillo.org">
+                <i class="fas fa-envelope"></i>
+                EMAIL
+            </a>
+            <a href="https://maps.app.goo.gl/rvdXeaRmvEJTuLnA9" target="_blank">
+                <i class="fas fa-map-marker-alt"></i>
+                DIRECCIÓN
+            </a>
+        </nav>
+
+        <main class="content">
+
+            <p class="description">
+                La Asociación Pato Amarillo es una entidad sin ánimo de lucro que distribuye ropa y recursos alimenticios de donaciones de particulares, empresas o fundaciones privadas, así como del Banco de Alimentos de Madrid de la que somos entidad beneficiaria.
+            </p>
+
+            <ul class="contact-list">
+                <li>
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="info">
+                        <a href="tel:+34667398471" class="contact-hyperlink">
+                            <span>+34 667 398 471</span>
+                        </a>
+                        <small>Móvil</small>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info">
+                        <a href="mailto:info@asociacionpatoamarillo.org" class="contact-hyperlink">
+                           <span>info@asociacionpatoamarillo.org</span>
+                        </a>
+                        <small>Email</small>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info">
+                        <span>Calle Salado, 8</span>
+                        <span>Madrid, 28041</span>
+                        <span>España</span>
+                        <a href="https://maps.app.goo.gl/rvdXeaRmvEJTuLnA9" class="map-link" target="_blank">MOSTRAR EN MAPA</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"><i class="fas fa-globe"></i></div>
+                    <div class="info">
+                        <a href="https://www.asociacionpatoamarillo.org" class="contact-hyperlink" target="_blank">
+                            <span>www.asociacionpatoamarillo.org</span>
+                        </a>
+                        <small>Página web</small>
+                    </div>
+                </li>
+            </ul>
+
+            <section class="social-section">
+                <h2>Redes Sociales</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/asociacionpatoamarillo/" class="facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/asociacion_pato_amarillo/#" class="instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
